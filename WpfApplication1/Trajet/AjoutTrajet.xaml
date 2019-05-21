@@ -1,0 +1,82 @@
+﻿<Window x:Class="WpfApplication1.AjoutTrajet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        mc:Ignorable="d"
+        Title="AjoutTrajet" Height="450" Width="500">
+    <Grid>
+        <TextBox Name="duree"
+                 materialDesign:HintAssist.Hint="Duree"
+                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                 Foreground="Blue"
+                 Background="White"
+                 VerticalAlignment="Top"
+                 Margin="97,75,96.6,0"
+                 Width="200"
+                 HorizontalAlignment="Center" Height="26"/>
+        <ComboBox Name="id_voyage"
+                 materialDesign:HintAssist.Hint="Nom du Voyage"
+                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                 Foreground="Blue"
+                 Background="White"
+                 VerticalAlignment="Top"
+                 Margin="97,129,96.6,0"
+                 Width="200"
+                 HorizontalAlignment="Center" Height="26">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Nom}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox Name="aeroportA"
+                 materialDesign:HintAssist.Hint="Aeroport d'Arriver"
+                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                 Foreground="Blue"
+                 Background="White"
+                 VerticalAlignment="Top"
+                 Margin="97,234,96.6,0"
+                 Width="200"
+                 HorizontalAlignment="Center" Height="26">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <VirtualizingStackPanel>
+                        <TextBlock Text="{Binding IdAeroport}"></TextBlock>
+                    </VirtualizingStackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox Name="aeroportD"
+                 materialDesign:HintAssist.Hint="Aeroport de Départ"
+                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                 Foreground="Blue"
+                 Background="White"
+                 VerticalAlignment="Top"
+                 Margin="97,185,96.6,0"
+                 Width="200"
+                 HorizontalAlignment="Center" Height="26">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <VirtualizingStackPanel>
+                        <TextBlock Text="{Binding IdAeroport}"></TextBlock>
+                    </VirtualizingStackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBox Name="kilometre"
+                 materialDesign:HintAssist.Hint="Nombre de Kilométre"
+                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                 Foreground="Blue"
+                 Background="White"
+                 VerticalAlignment="Top"
+                 Margin="97,283,96.6,0"
+                 Width="200"
+                 HorizontalAlignment="Center" Height="26"/>
+        <Button Click="Button_Click" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200"  Height="32" Margin="97,338,96.6,50">Enregistrer</Button>
+    </Grid>
+</Window>

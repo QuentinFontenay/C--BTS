@@ -1,0 +1,99 @@
+﻿<Window x:Class="WpfApplication1.AjoutVol"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="AjoutVol" Height="450" Width="500">
+    <Grid>
+        <DatePicker Foreground="Blue" Background="White" Name="date_depart" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,10,168.6,366"
+  Width="209"
+  materialDesign:HintAssist.Hint="Date de Départ"
+  Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Height="44" />
+        <materialDesign:TimePicker
+  Is24Hours="True"
+  x:Name="temps_depart"
+  materialDesign:HintAssist.Hint="heure de départ"
+ Margin="350,22,26.6,0" />
+        <DatePicker Foreground="Blue" Background="White" Name="date_arriver" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,71,169.6,310"
+  Width="208"
+  materialDesign:HintAssist.Hint="Date d'Arriver"
+  Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Height="39" />
+        <materialDesign:TimePicker
+  Is24Hours="True"
+  x:Name="temps_arriver"
+          materialDesign:HintAssist.Hint="heure d'arriver"
+  Margin="350,83,26.6,0" />
+        <ComboBox Name="id_voyage"
+                 materialDesign:HintAssist.Hint="Nom du Voyage"
+                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                 Foreground="Blue"
+                 Background="White"
+                 VerticalAlignment="Top"
+                 Margin="97,129,96.6,0"
+                 Width="200"
+                 HorizontalAlignment="Center" Height="26">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Nom}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox Name="aeroportA"
+                 materialDesign:HintAssist.Hint="Aeroport d'Arriver"
+                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                 Foreground="Blue"
+                 Background="White"
+                 VerticalAlignment="Top"
+                 Margin="97,234,96.6,0"
+                 Width="200"
+                 HorizontalAlignment="Center" Height="26">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding IdAeroport}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox Name="aeroportD"
+                 materialDesign:HintAssist.Hint="Aeroport de Départ"
+                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                 Foreground="Blue"
+                 Background="White"
+                 VerticalAlignment="Top"
+                 Margin="97,185,96.6,0"
+                 Width="200"
+                 HorizontalAlignment="Center" Height="26">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding IdAeroport}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox Name="Avion"
+                 materialDesign:HintAssist.Hint="Choix de l'avion"
+                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                 Foreground="Blue"
+                 Background="White"
+                 VerticalAlignment="Top"
+                 Margin="97,283,96.6,0"
+                 Width="200"
+                 HorizontalAlignment="Center" Height="26">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Nom}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Button Click="Button_Click" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="200"  Height="32" Margin="147,0,146.6,42" >Enregistrer</Button>
+    </Grid>
+</Window>

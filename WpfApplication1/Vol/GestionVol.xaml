@@ -1,0 +1,62 @@
+﻿<Window x:Class="WpfApplication1.GestionVol"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        mc:Ignorable="d"
+        Title="GestionVol" Height="600" Width="1000">
+
+    <Grid>
+        <Grid x:Name="GridMain" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="540" Width="1010"/>
+        <Grid Height="60" VerticalAlignment="Top" Background="#FF5C99D6">
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="1" ShadowDepth="1" Color="#FFACACAC"/>
+            </Grid.Effect>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" StaysOpen="False" Margin="10">
+                    <StackPanel Width="150">
+                        <Button Click="Button_Click" Content="Accueil"/>
+                        <Separator/>
+                        <Button Click="Button_Click_1" Content="Eteindre"/>
+                    </StackPanel>
+                </materialDesign:PopupBox>
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22">Air Atlantique</TextBlock>
+        </Grid>
+        <Grid>
+            <ListView Margin="0,60,19.6,-39.6" Name="list_vol">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="IdVol" Width="120" DisplayMemberBinding="{Binding IdVol}" />
+                        <GridViewColumn Header="DateA" Width="150" DisplayMemberBinding="{Binding DateA}" />
+                        <GridViewColumn Header="DateD" Width="150" DisplayMemberBinding="{Binding DateD}"/>
+                        <GridViewColumn Header="Status" Width="150" DisplayMemberBinding="{Binding Status}"/>
+                        <GridViewColumn>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Click="Button_Click_2">
+                                        <Image Source="C:\Users\quent\Documents\B2\C#\c_sharpedo_aa\WpfApplication1\image\edit.png"></Image>
+                                    </Button>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Click="Button_Click_3">
+                                        <Image Source="C:\Users\quent\Documents\B2\C#\c_sharpedo_aa\WpfApplication1\image\delete.png"></Image>
+                                    </Button>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <Button Name="Trajet" Click="Trajet_Click" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="200" Margin="0,0,600,20">Gestion des Trajet</Button>
+        <Button Name="Voyage" Click="Voyage_Click" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="600,0,0,20" Width="200">Gestion des Voyages</Button>
+        <Button Name="AddVol" Click="Voyage_Click_1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,20" Width="200">Ajout d'un Vol</Button>
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApplication1.AjoutVoyage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="AjoutVoyage" Height="250" Width="400">
+    <Grid Background="Blue">
+        <TextBox Name="nom_voyage"
+                 materialDesign:HintAssist.Hint="Nom du Voyage"
+                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                 Foreground="Blue"
+                 Background="White"
+                 VerticalAlignment="Top"
+                 Margin="97,75,96.6,0"
+                 Width="200"
+                 HorizontalAlignment="Center" Height="26"/>
+        <Button Click="Button_Click" Background="White" Foreground="Blue" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200"  Height="32" Margin="97,132,96.6,56">Enregistrer</Button>
+    </Grid>
+</Window>

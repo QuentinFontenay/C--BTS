@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApplication1.Planifier"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        mc:Ignorable="d"
+        Title="Planifier" Height="450" Width="400">
+    <Grid Background="Blue">
+        <TextBox Name="suivi_appareil"
+                 materialDesign:HintAssist.Hint="Titre de la Maintenance"
+                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                 Foreground="Blue"
+                 Background="White"
+                 VerticalAlignment="Top"
+                 Margin="0,50,40,0"
+                 Width="150"
+                 HorizontalAlignment="Center"/>
+        <DatePicker Foreground="Blue" Background="White" Name="date_début" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,106,136.6,270"
+  Width="150"
+  materialDesign:HintAssist.Hint="Date de Début"
+  Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Height="44" />
+        <DatePicker Foreground="Blue" Background="White" Name="date_fin" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,188,136.6,193"
+  Width="150"
+  materialDesign:HintAssist.Hint="Date de Fin"
+  Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Height="39" />
+        <Button Click="Button_Click" Background="White" Foreground="Blue" Margin="107,278,136.6,102" Height="Auto">Enregistrer</Button>
+    </Grid>
+</Window>

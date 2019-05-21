@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using WpfApplication1.repository.dao;
+
+namespace WpfApplication1.C_.service.dto
+{
+    public class MotorisationDTO
+    {
+        public int Id_moteur { get; set; }
+
+        public string Nom { get; set; }
+
+        public List<AvionDAO> avionDAOs;
+    }
+}

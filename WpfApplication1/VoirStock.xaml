@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApplication1.VoirStock"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="VoirStock" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.901,0.163">
+        <Grid Margin="0,0,178.6,0">
+            <TextBlock FontFamily="Source Sans Pro Black" FontSize="20" Name="repas" Text="Repas" Margin="19,24,508,367"></TextBlock>
+            <ProgressBar Height="20" Minimum="0" Maximum="400" Value="75" Name="bar_repas" Margin="0,58,0,342" Foreground="#FFA82D62" />
+            <ProgressBar Height="20" Minimum="0" Maximum="400" Value="75" x:Name="bar_magazine" Margin="0,149,0,251" Foreground="#FF2DA8A6" />
+            <ProgressBar Height="20" Minimum="0" Maximum="400" Value="75" x:Name="bar_boisson" Margin="0,252,0,148" Foreground="#FF080808" />
+            <ProgressBar Height="20" Minimum="0" Maximum="400" Value="75" x:Name="bar_produit" Margin="0,339,0,61" />
+            <TextBlock FontFamily="Source Sans Pro Black" FontSize="20" x:Name="repas_Copy" Text="Magazines" Margin="19,115,479,271"/>
+            <TextBlock FontFamily="Source Sans Pro Black" FontSize="20" x:Name="repas_Copy1" Text="Boissons" Margin="19,218,506,173"/>
+            <TextBlock FontFamily="Source Sans Pro Black" FontSize="20" x:Name="repas_Copy2" Text="Produit Hygiénique" Margin="19,300,401,86"/>
+            <TextBlock Name="nbr_repas" Visibility="Collapsed"   FontFamily="Source Sans Pro Black" Foreground="Red" FontSize="20" HorizontalAlignment="Left" Margin="233,24,0,0" TextWrapping="Wrap" Text="(Nombre de repas insuffisant)" VerticalAlignment="Top"/>
+            <TextBlock Name="nbr_magazine" Visibility="Collapsed" FontFamily="Source Sans Pro Black" Foreground="Red" FontSize="20" HorizontalAlignment="Left" Margin="233,115,0,0" TextWrapping="Wrap" Text="(Nombre de magazine insuffisant)" VerticalAlignment="Top" Width="364"/>
+            <TextBlock Name="nbr_boisson" Visibility="Collapsed"   FontFamily="Source Sans Pro Black" Foreground="Red" FontSize="20" HorizontalAlignment="Left" Margin="233,218,0,0" TextWrapping="Wrap" Text="(Nombre de boissons insuffisant)" VerticalAlignment="Top" Width="364"/>
+            <TextBlock Name="nbr_produit" Visibility="Collapsed"  FontFamily="Source Sans Pro Black" Foreground="Red" FontSize="20" HorizontalAlignment="Left" Margin="233,300,0,0" TextWrapping="Wrap" Text="(Nombre de produit insuffisant)" VerticalAlignment="Top" Width="364"/>
+        </Grid>
+        <Button Name="command_produit" Click="Button_Click" Content="Commander" HorizontalAlignment="Left" Margin="659,338,0,0" VerticalAlignment="Top" Width="115" Height="25"/>
+        <ProgressBar Name="progress_repas" IsIndeterminate="True"
+  Style="{StaticResource MaterialDesignCircularProgressBar}"
+  RenderTransformOrigin="6.23,-1.14"  HorizontalAlignment="Left" Margin="710,54,0,0" VerticalAlignment="Top" />
+        <ProgressBar Name="progress_magazine" IsIndeterminate="True"
+  Style="{StaticResource MaterialDesignCircularProgressBar}"
+  RenderTransformOrigin="6.23,-1.14"  HorizontalAlignment="Left" Margin="710,147,0,0" VerticalAlignment="Top" />
+        <ProgressBar Name="progress_boisson" IsIndeterminate="True"
+  Style="{StaticResource MaterialDesignCircularProgressBar}"
+  RenderTransformOrigin="6.23,-1.14"  HorizontalAlignment="Left" Margin="710,252,0,0" VerticalAlignment="Top" />
+        <ProgressBar Visibility="Hidden" Name="progress_produit" IsIndeterminate="True"
+  Style="{StaticResource MaterialDesignCircularProgressBar}"
+  RenderTransformOrigin="6.23,-1.14"  HorizontalAlignment="Left" Margin="710,338,0,0" VerticalAlignment="Top" />
+        <Button Name="command_boisson" Click="Button_Click_1" Content="Commander" HorizontalAlignment="Left" Margin="659,252,0,0" VerticalAlignment="Top" Width="115" Height="25"/>
+        <Button Name="command_magazine" Click="Button_Click_2" Content="Commander" HorizontalAlignment="Left" Margin="659,147,0,0" VerticalAlignment="Top" Width="115" Height="25"/>
+        <Button Name="command_repas" Click="Button_Click_3" Content="Commander" HorizontalAlignment="Left" Margin="659,54,0,0" VerticalAlignment="Top" Width="115" Height="25"/>
+    </Grid>
+</Window>
