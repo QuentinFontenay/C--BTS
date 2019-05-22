@@ -9,13 +9,13 @@
 
     <Grid>
         <Button Click="Button_Click_1" Width="120" Height="120" Background="White" Margin="117,150,556.6,150">
-            <Image Source="C:\Users\quent\Documents\B2\C#\c_sharpedo_aa\WpfApplication1\image\tools1.png"></Image>
+            <Image Source="image\tools1.png"></Image>
         </Button>
         <Button Click="Button_Click" Background="White" Width="120" Height="120" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,150,127.6,150">
-            <Image Source="C:\Users\quent\Documents\B2\C#\c_sharpedo_aa\WpfApplication1\image\register1.png"></Image>
+            <Image Source="/image/register1.png"></Image>
         </Button>
         <Button Click="Button_Click_2" Background="White" Width="120" Height="120" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,150,345.6,150">
-            <Image Source="C:\Users\quent\Documents\B2\C#\c_sharpedo_aa\WpfApplication1\image\archive.png"></Image>
+            <Image Source="/image/archive.png"></Image>
         </Button>
     </Grid>
 </Window>

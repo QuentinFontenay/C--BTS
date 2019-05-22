@@ -26,7 +26,7 @@
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22">Air Atlantique</TextBlock>
         </Grid>
         <Grid>
-            <ListView Margin="0,60,19.6,-39.6" Name="list_vol">
+            <ListView  Margin="0,60,0,70.4" Name="list_vol">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="IdVol" Width="120" DisplayMemberBinding="{Binding IdVol}" />
@@ -37,7 +37,7 @@
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <Button Click="Button_Click_2">
-                                        <Image Source="C:\Users\quent\Documents\B2\C#\c_sharpedo_aa\WpfApplication1\image\edit.png"></Image>
+                                        <Image Source="/image/edit.png"></Image>
                                     </Button>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
@@ -46,7 +46,7 @@
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <Button Click="Button_Click_3">
-                                        <Image Source="C:\Users\quent\Documents\B2\C#\c_sharpedo_aa\WpfApplication1\image\delete.png"></Image>
+                                        <Image Source="/image/delete.png"></Image>
                                     </Button>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
@@ -58,5 +58,6 @@
         <Button Name="Trajet" Click="Trajet_Click" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="200" Margin="0,0,600,20">Gestion des Trajet</Button>
         <Button Name="Voyage" Click="Voyage_Click" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="600,0,0,20" Width="200">Gestion des Voyages</Button>
         <Button Name="AddVol" Click="Voyage_Click_1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,20" Width="200">Ajout d'un Vol</Button>
+
     </Grid>
 </Window>

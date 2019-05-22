@@ -6,7 +6,7 @@
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
       xmlns:local="clr-namespace:WpfApplication1"
       mc:Ignorable="d" 
-      d:DesignHeight="800" d:DesignWidth="1000"
+      d:DesignHeight="600" d:DesignWidth="1000"
       Title="Gestion Trajet">
 
     <Grid>
@@ -20,6 +20,7 @@
                     <StackPanel Width="150">
                         <Button Click="Button_Click" Content="Accueil"/>
                         <Separator/>
+                        
                         <Button Click="Button_Click_1" Content="Eteindre"/>
                     </StackPanel>
                 </materialDesign:PopupBox>
@@ -27,7 +28,7 @@
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22">Air Atlantique</TextBlock>
         </Grid>
         <Grid>
-            <ListView Margin="0,60,19.6,-39.6" Name="list_trajet">
+            <ListView   Margin="0,60,0,70.4" Name="list_trajet">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="IdTrajet" Width="120" DisplayMemberBinding="{Binding IdTrajet}" />
@@ -39,7 +40,7 @@
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <Button Click="Button_Click_2">
-                                        <Image Source="C:\Users\quent\Documents\B2\C#\c_sharpedo_aa\WpfApplication1\image\edit.png"></Image>
+                                        <Image Source="/image/edit.png"></Image>
                                     </Button>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
@@ -48,7 +49,7 @@
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <Button Focusable="True" Click="Button_Click_3">
-                                        <Image Source="C:\Users\quent\Documents\B2\C#\c_sharpedo_aa\WpfApplication1\image\delete.png"></Image>
+                                        <Image Source="/image/delete.png"></Image>
                                     </Button>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>

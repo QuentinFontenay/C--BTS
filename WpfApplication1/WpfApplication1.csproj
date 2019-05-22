@@ -325,6 +325,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="image\image.rar" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -332,6 +333,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.sample.config" />
+    <Resource Include="image\archive.png" />
+    <Resource Include="image\delete.png" />
+    <Resource Include="image\edit.png" />
+    <Resource Include="image\plane_dispo.png" />
+    <Resource Include="image\plane_secours.png" />
+    <Resource Include="image\register.png" />
+    <Resource Include="image\register1.png" />
+    <Resource Include="image\tools.png" />
+    <Resource Include="image\tools1.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
