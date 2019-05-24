@@ -27,12 +27,12 @@ namespace WpfApplication1
         {
             InitializeComponent();
             recup_nom = lol;
-            Nom.Text = recup_nom.Nom;
+            nom_voyage.Text = recup_nom.Nom;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            voyageController.UpdateVoyage(recup_nom.IdVoyage, "nom", Nom.Text);
+            voyageController.UpdateVoyage(recup_nom.IdVoyage, "nom", nom_voyage.Text);
             this.Close();
         }
     }

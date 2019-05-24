@@ -7,13 +7,13 @@ namespace WpfApplication1.repository.AeroportRepository
 {
     public abstract class Abstract_AeroportRepository
     {
-        protected string request_select = "SELECT * FROM Aeroport";
+        protected string request_select = "SELECT * FROM aeroport";
 
-        protected string request_delete = "DROP * FROM Aeroport WHERE code_aita=";
+        protected string request_delete = "DROP * FROM aeroport WHERE code_aita=";
 
-        protected string request_update = "UPDATE Aeroport SET ";
+        protected string request_update = "UPDATE aeroport SET ";
 
-        protected string request_insert = "INSERT INTO Aeroport VALUES ";
+        protected string request_insert = "INSERT INTO aeroport VALUES ";
         
         
         public abstract List<AeroportDAO> GetAeroportDAOsInternal();

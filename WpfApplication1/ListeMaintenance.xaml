@@ -36,7 +36,7 @@
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <Button Click="Button_Click_1">
-                                        <Image Source="C:\Users\quent\Documents\B2\C#\c_sharpedo_aa\WpfApplication1\image\edit.png"></Image>
+                                        <Image Source="/image/edit.png"></Image>
                                     </Button>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
@@ -45,7 +45,7 @@
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <Button Click="Button_Click">
-                                        <Image Source="C:\Users\quent\Documents\B2\C#\c_sharpedo_aa\WpfApplication1\image\delete.png"></Image>
+                                        <Image Source="/image/delete.png"></Image>
                                     </Button>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>

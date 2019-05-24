@@ -6,15 +6,19 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="EditVoyage" Height="250" Width="200">
+        Title="EditVoyage" Height="250" Width="400">
     <Grid>
-        <TextBox Name="Nom"
-            VerticalAlignment="Center"
-                 HorizontalAlignment="Center"
-            materialDesign:HintAssist.Hint="Nom du Voyage"
-            materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
-            BorderThickness="0"
-            Width="140"/>
-        <Button Click="Button_Click" VerticalAlignment="Bottom" Content="Modifier" />
+        <Grid Background="Blue">
+            <TextBox Name="nom_voyage"
+                 materialDesign:HintAssist.Hint=" Nom du Voyage"
+                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                 Foreground="Blue"
+                 Background="White"
+                 VerticalAlignment="Top"
+                 Margin="77,75,96.6,0"
+                 Width="200"
+                 HorizontalAlignment="Center" Height="26"/>
+            <Button Click="Button_Click" Background="White" Foreground="Blue" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200"  Height="32" Margin="87,131,106.6,57">Enregistrer</Button>
+        </Grid>
     </Grid>
 </Window>

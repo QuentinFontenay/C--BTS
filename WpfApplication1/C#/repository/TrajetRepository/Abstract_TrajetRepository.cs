@@ -5,13 +5,13 @@ namespace WpfApplication1.repository.TrajetRepository
 {
     public abstract class Abstract_TrajetRepository
     {
-         protected string request_select = "SELECT * FROM Trajet";
+         protected string request_select = "SELECT * FROM trajet";
 
-        protected string request_delete = "DELETE FROM Trajet WHERE id_trajet=";
+        protected string request_delete = "DELETE FROM trajet WHERE id_trajet=";
 
-        protected string request_update = "UPDATE Trajet SET ";
+        protected string request_update = "UPDATE trajet SET ";
 
-        protected string request_insert = "INSERT INTO Trajet (kilometre, duree, id_voyage, aeroportA, aeroportD) VALUES (";
+        protected string request_insert = "INSERT INTO trajet (kilometre, duree, id_voyage, aeroportA, aeroportD) VALUES (";
         
         //return a List<AvionDAO>
         // /!\ if you don't give any id you will make a select all

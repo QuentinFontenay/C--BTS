@@ -9,14 +9,14 @@
         Title="AjoutVoyage" Height="250" Width="400">
     <Grid Background="Blue">
         <TextBox Name="nom_voyage"
-                 materialDesign:HintAssist.Hint="Nom du Voyage"
+                 materialDesign:HintAssist.Hint=" Nom du Voyage"
                  materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                  Foreground="Blue"
                  Background="White"
                  VerticalAlignment="Top"
-                 Margin="97,75,96.6,0"
+                 Margin="77,75,96.6,0"
                  Width="200"
                  HorizontalAlignment="Center" Height="26"/>
-        <Button Click="Button_Click" Background="White" Foreground="Blue" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200"  Height="32" Margin="97,132,96.6,56">Enregistrer</Button>
+        <Button Click="Button_Click" Background="White" Foreground="Blue" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200"  Height="32" Margin="87,131,106.6,57">Enregistrer</Button>
     </Grid>
 </Window>

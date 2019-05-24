@@ -9,13 +9,13 @@ namespace WpfApplication1.C_.repository.StockRepository
 {
     public abstract class Abstract_StockRepository
     {
-        protected string request_select = "SELECT * FROM Stock";
+        protected string request_select = "SELECT * FROM stock";
 
-        protected string request_delete = "DELETE FROM Stock WHERE id_stock=";
+        protected string request_delete = "DELETE FROM stock WHERE id_stock=";
 
-        protected string request_update = "UPDATE Stock SET ";
+        protected string request_update = "UPDATE stock SET ";
 
-        protected string request_insert = "INSERT INTO Stock (repas, boisson, magazine, produit_hygienique, id_avion) VALUES (";
+        protected string request_insert = "INSERT INTO stock (repas, boisson, magazine, produit_hygienique, id_avion) VALUES (";
 
         //return a List<AvionDAO>
         // /!\ if you don't give any id you will make a select all

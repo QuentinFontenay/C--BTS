@@ -17,8 +17,8 @@
                  Margin="97,75,96.6,0"
                  Width="200"
                  HorizontalAlignment="Center" Height="26"/>
-        <ComboBox Name="id_voyage" Text="jfidsojfojsdo"
-              
+        <ComboBox Name="id_voyage"
+                  materialDesign:HintAssist.Hint="Nom du Voyage"
                  materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                  Foreground="Blue"
                  Background="White"

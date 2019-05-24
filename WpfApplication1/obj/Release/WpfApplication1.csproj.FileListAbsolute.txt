@@ -56,4 +56,3 @@ C:\Users\quent\Documents\B2\C#\C--BTS\WpfApplication1\obj\Release\WpfApplication
 C:\Users\quent\Documents\B2\C#\C--BTS\WpfApplication1\obj\Release\WpfApplication1.csproj.CopyComplete
 C:\Users\quent\Documents\B2\C#\C--BTS\WpfApplication1\obj\Release\WpfApplication1.exe
 C:\Users\quent\Documents\B2\C#\C--BTS\WpfApplication1\obj\Release\WpfApplication1.pdb
-C:\Users\quent\Documents\B2\C#\C--BTS\WpfApplication1\obj\Release\WpfApplication1.csprojAssemblyReference.cache

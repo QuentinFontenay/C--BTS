@@ -9,13 +9,13 @@ namespace WpfApplication1.C_.repository.VoyageRepository
 {
     public abstract class Abstract_VoyageRepository
     {
-        protected string request_select = "SELECT * FROM Voyage";
+        protected string request_select = "SELECT * FROM voyage";
 
-        protected string request_delete = "DELETE FROM Voyage WHERE id_voyage=";
+        protected string request_delete = "DELETE FROM voyage WHERE id_voyage=";
 
-        protected string request_update = "UPDATE Voyage SET ";
+        protected string request_update = "UPDATE voyage SET ";
 
-        protected string request_insert = "INSERT INTO Voyage (nom) VALUES (";
+        protected string request_insert = "INSERT INTO voyage (nom) VALUES (";
 
         //return a List<AvionDAO>
         // /!\ if you don't give any id you will make a select all

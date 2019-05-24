@@ -24,7 +24,7 @@
             </StackPanel>
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22">Air Atlantique</TextBlock>
         </Grid>
-        <ListView Margin="0,60,19.6,-39.6" Name="list_avion">
+        <ListView Margin="0,60,0,10.4" Name="list_avion">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="IdAvion" Width="120" DisplayMemberBinding="{Binding IdAvion}" />

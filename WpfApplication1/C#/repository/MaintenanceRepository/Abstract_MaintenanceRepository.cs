@@ -9,13 +9,13 @@ namespace WpfApplication1.C_.repository.MaintenanceRepository
 {
    public abstract class Abstract_MaintenanceRepository
     {
-        protected string request_select = "SELECT * FROM Maintenance";
+        protected string request_select = "SELECT * FROM maintenance";
 
-        protected string request_delete = "DELETE FROM Maintenance WHERE id_maintenance=";
+        protected string request_delete = "DELETE FROM maintenance WHERE id_maintenance=";
 
-        protected string request_update = "UPDATE Maintenance SET ";
+        protected string request_update = "UPDATE maintenance SET ";
 
-        protected string request_insert = "INSERT INTO Maintenance (suivi_appareil, id_avion, dateDebut, dateFin) VALUES (";
+        protected string request_insert = "INSERT INTO maintenance (suivi_appareil, id_avion, dateDebut, dateFin) VALUES (";
 
         //return a List<AvionDAO>
         // /!\ if you don't give any id you will make a select all

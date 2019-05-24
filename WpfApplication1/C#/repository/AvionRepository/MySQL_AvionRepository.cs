@@ -50,7 +50,7 @@ namespace WpfApplication1.repository
 
         public override void RemoveAvionInternal()
         {
-            using (var request = new MySqlCommand(this.request_select, (MySql.Data.MySqlClient.MySqlConnection) this.db.connection))
+            using (var request = new MySqlCommand(this.request_delete, (MySql.Data.MySqlClient.MySqlConnection) this.db.connection))
             {
                 request.ExecuteNonQuery();
             }

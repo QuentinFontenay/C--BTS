@@ -20,7 +20,6 @@ namespace WpfApplication1.service.converter
                 avionDTO.IdModele = avionDAO.IdModele;
                 avionDTO.IdMoteur = avionDAO.IdMoteur;
                 avionDTO.DistanceParcourue = avionDAO.DistanceParcourue;
-                avionDTO.Type = avionDAO.Type;
                 avionDTO.Status = avionDAO.Status;
                 
                 avionDTOs.Add(avionDTO);
@@ -54,7 +53,6 @@ namespace WpfApplication1.service.converter
                 avionDAO.IdModele = avionDTO.IdModele;
                 avionDAO.IdMoteur = avionDTO.IdMoteur;
                 avionDAO.DistanceParcourue = avionDTO.DistanceParcourue;
-                avionDAO.Type = avionDTO.Type;
                 avionDAO.Status = avionDTO.Status;
                 
                 avionDAOs.Add(avionDAO);

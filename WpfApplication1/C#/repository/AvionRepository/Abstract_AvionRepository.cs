@@ -5,13 +5,13 @@ namespace WpfApplication1.repository
 {
     public abstract class Abstract_AvionRepository
     {
-        protected string request_select = "SELECT * FROM Avion";
+        protected string request_select = "SELECT * FROM avion";
 
-        protected string request_delete = "DROP * FROM Avion WHERE id_avion=";
+        protected string request_delete = "DELETE FROM avion WHERE id_avion=";
 
-        protected string request_update = "UPDATE Avion SET ";
+        protected string request_update = "UPDATE avion SET ";
 
-        protected string request_insert = "INSERT INTO Avion (distanceP, id_aeroport, id_moteur, id_modele, id_maintenance, id_incident) VALUES (";
+        protected string request_insert = "INSERT INTO avion (distanceP, id_aeroport, id_moteur, id_modele, status) VALUES (";
         
         //return a List<AvionDAO>
         // /!\ if you don't give any id you will make a select all
@@ -85,10 +85,10 @@ namespace WpfApplication1.repository
         {
             foreach (var avionDAO in avionDAOs)
             {
-                this.request_insert = this.request_insert + avionDAO.DistanceParcourue + ", " + avionDAO.IdAeroport + ", " + avionDAO.IdMoteur + ", " + avionDAO.IdModele + ", " + avionDAO.Status + ", " + avionDAO.Type + ")";
+                this.request_insert = this.request_insert + avionDAO.DistanceParcourue + ", " + avionDAO.IdAeroport + ", " + avionDAO.IdMoteur + ", " + avionDAO.IdModele + ", " + avionDAO.Status + ")";
                 AddAvionInternal();
                 
-                this.request_insert = "INSERT INTO Avion (distanceP, id_aeroport, id_moteur, id_modele, id_maintenance, id_incident) VALUES (";
+                this.request_insert = "INSERT INTO Avion (distanceP, id_aeroport, id_moteur, id_modele, status) VALUES (";
             }
         }
     }

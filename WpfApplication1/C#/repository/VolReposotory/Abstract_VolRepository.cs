@@ -75,7 +75,7 @@ namespace WpfApplication1.C_.repository.VolReposotory
                 this.request_insert = this.request_insert + volDAO.IdTrajet + ", " + '"' + date_a + '"' + ", " + '"' + date_d + '"' + ", " + volDAO.Status + ", " + volDAO.IdAvion + ", " + '"' + volDAO.AeroportA_Reel + '"' + ", " + '"' + volDAO.AeroportD_Reel + '"' + ", " + '"' + volDAO.AeroportA_Theo + '"' + ", " + '"' + date_a + '"' + ", " + '"' + date_d + '"' + ")";
                 AddVolInternal();
 
-                this.request_insert = "INSERT INTO Vol (id_trajet, dateA, dateD, status, id_avions, AeroportA_Reel, id_aeroportD_Reel, AeroportA_Theo, dateATheo, dateDTheo) VALUES (";
+                this.request_insert = "INSERT INTO vol (id_trajet, dateA, dateD, status, id_avions, AeroportA_Reel, id_aeroportD_Reel, AeroportA_Theo, dateATheo, dateDTheo) VALUES (";
             }
         }
         public List<VolDAO> UpdateVol(int id, string column, dynamic value)

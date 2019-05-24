@@ -44,16 +44,10 @@ namespace WpfApplication1
             recup_info = lol;
             duree.Text = recup_info.Duree;
             kilometre.Text = Convert.ToString(recup_info.Kilometre);
-            aeroportA.Text = recup_info.AeroportArrive;
-            aeroportD.Text = recup_info.AeroportDepart;
-            for (int i = 0; i < VoyageDTOs.Count(); i++)
-            {
-                if (VoyageDTOs[i].IdVoyage == recup_info.IdVoyage)
-                {
-                    id_voyage.Text = VoyageDTOs[i].Nom;
-                }
-                id_voyage.ItemsSource = VoyageDTOs;
-            }
+            //aeroportA.Text = recup_info.AeroportArrive;
+            //aeroportD.Text = recup_info.AeroportDepart;
+ 
+            id_voyage.ItemsSource = VoyageDTOs;
             aeroportA.ItemsSource = AeroportDTOs;
             aeroportD.ItemsSource = AeroportDTOs;
         }

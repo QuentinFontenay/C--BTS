@@ -66,8 +66,8 @@ namespace WpfApplication1
             temps_depart.Text = timedepart;
             date_arriver.Text = datearriver;
             temps_arriver.Text = timearriver;
-            aeroportA.Text = recup_info.AeroportA_Reel;
-            aeroportD.Text = recup_info.AeroportD_Reel;
+           // aeroportA.Text = recup_info.AeroportA_Reel;
+            //aeroportD.Text = recup_info.AeroportD_Reel;
             //id_voyage.Text = recup_info.
 
 

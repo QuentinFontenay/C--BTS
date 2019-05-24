@@ -6,13 +6,13 @@ namespace WpfApplication1.C_.repository.ModeleRepository
 {
     public abstract class  Abstract_ModeleRepository
     {
-        protected string request_select = "SELECT * FROM Modele";
+        protected string request_select = "SELECT * FROM modele";
 
-        protected string request_delete = "DROP * FROM Modele WHERE id=";
+        protected string request_delete = "DROP * FROM modele WHERE id=";
 
-        protected string request_update = "UPDATE Modele SET ";
+        protected string request_update = "UPDATE modele SET ";
 
-        protected string request_insert = "INSERT INTO Modele VALUES ";
+        protected string request_insert = "INSERT INTO modele VALUES ";
 
         public abstract List<ModeleDAO> GetModeleDAOsInternal();
 

@@ -9,13 +9,13 @@ namespace WpfApplication1.C_.repository.MotorisationRepository
 {
     public abstract class Abstract_MotorisationRepository
     {
-        protected string request_select = "SELECT * FROM Motorisation";
+        protected string request_select = "SELECT * FROM motorisation";
 
-        protected string request_delete = "DROP * FROM Motorisation WHERE id=";
+        protected string request_delete = "DROP * FROM motorisation WHERE id=";
 
-        protected string request_update = "UPDATE Motorisation SET ";
+        protected string request_update = "UPDATE motorisation SET ";
 
-        protected string request_insert = "INSERT INTO Motorisation VALUES ";
+        protected string request_insert = "INSERT INTO motorisation VALUES ";
 
         public abstract List<MotorisationDAO> GetMotorisationDAOsInternal();
 
